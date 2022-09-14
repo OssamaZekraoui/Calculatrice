@@ -12,5 +12,19 @@
    });
 
 
+   equal.addEventListener('click',function(e){
+    if(screen.equal ===''){
+        screen.value="Please enter";
+    } else {
+        let answer = eval(screen.value);
+        screen.value = answer;
+    }
+   })
+
+   clear.addEventListener('click',function(e){
+    screen.value = "";
+   })
+
+
 
 })();
